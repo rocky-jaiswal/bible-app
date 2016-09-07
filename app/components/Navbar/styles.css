@@ -1,0 +1,31 @@
+.navbar { /* stylelint-disable */
+  background-color: #95AB63;
+  height: 7%;
+  padding: 5px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.langNav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.langNav button {
+  margin-right: 5px;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+.inactiveBtn {
+  background: #10222B;
+  color: #F6FFE0;
+}
+
+.activeBtn {
+  background: #F6FFE0;
+  color: #10222B;
+}

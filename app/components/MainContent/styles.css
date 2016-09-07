@@ -1,0 +1,16 @@
+.mainContent { /* stylelint-disable */
+  background-color: #F6FFE0;
+  height: 82%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 5px 15px;
+}
+
+.mainContent table {
+  width: 100%;
+}
+
+.mainContent table button {
+  width: 100%;
+  padding: 10px;
+}
