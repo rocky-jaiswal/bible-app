@@ -50,7 +50,7 @@ class MainContent extends React.Component { // eslint-disable-line react/prefer-
         <tbody>
           {Query.getVerses(bibles, ver, book, chapter).map((verse, idx) =>
             <tr key={idx}>
-              <td>
+              <td className={styles.lighter}>
                 <p>{verse.verse}</p>
               </td>
               <td>

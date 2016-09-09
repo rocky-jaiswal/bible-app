@@ -5,7 +5,7 @@
 import { takeLatest } from 'redux-saga';
 import { call, put } from 'redux-saga/effects';
 
-import API from './api';
+import AsyncAPI from './async_api';
 
 import {
   FETCH_BIBLES_REQUEST,
@@ -26,13 +26,13 @@ function* fetchBibles(action) {
 
 function* fetchAndStoreBible(version) {
   try {
-    const loadedBible = yield call(API.loadBible, version);
+    const loadedBible = yield call(AsyncAPI.loadBible, version);
     if (loadedBible !== null && loadedBible.length === 31102) {
       return loadedBible;
     }
-    const response = yield call(API.fetchBible, version);
-    yield call(API.storeBible, version, response.data);
-    return yield call(API.loadBible, version);
+    const response = yield call(AsyncAPI.fetchBible, version);
+    yield call(AsyncAPI.storeBible, version, response.data);
+    return yield call(AsyncAPI.loadBible, version);
   } catch (err) {
     console.error(err);
     const message = `Error fetching bible version - ${version}`;

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import localforage from 'localforage';
 
-const API = {
+const AsyncAPI = {
 
   async fetchBible(version) {
     const response = await axios.get(`http://localhost:8000/${version}.json`);
@@ -20,4 +20,4 @@ const API = {
 
 };
 
-export default API;
+export default AsyncAPI;
