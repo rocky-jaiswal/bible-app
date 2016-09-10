@@ -28,7 +28,7 @@
 .btn {
   background: #95AB63;
   color: #F6FFE0;
-
+  border-bottom: 3px solid #535f37;
   border-radius: 2px;
   padding: 5px 10px;
 }

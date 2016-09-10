@@ -5,9 +5,9 @@ const AsyncAPI = {
 
   async fetchBible(version) {
     const urls = {
-      kjv: 'http://localhost:8000/kjv.json',
-      mev: 'http://localhost:8000/mev.json',
-      niv: 'http://localhost:8000/niv.json',
+      kjv: 'http://192.168.0.210:8000/kjv.json',
+      mev: 'http://192.168.0.210:8000/mev.json',
+      niv: 'http://192.168.0.210:8000/niv.json',
     };
     // const urls = {
     //   kjv: 'https://firebasestorage.googleapis.com/v0/b/bible-app-a6e33.appspot.com/o/kjv.json?alt=media&token=869f7216-edb8-4546-b54d-09ed007efe94',

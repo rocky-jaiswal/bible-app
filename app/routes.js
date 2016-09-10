@@ -43,9 +43,9 @@ export default function createRoutes(store) {
       },
     }, {
       path: '*',
-      name: 'notfound',
-      getComponent(nextState, cb) {
-        System.import('containers/NotFoundPage')
+      name: 'home',
+      getComponent(location, cb) {
+        System.import('containers/Home')
           .then(loadModule(cb))
           .catch(errorLoading);
       },
